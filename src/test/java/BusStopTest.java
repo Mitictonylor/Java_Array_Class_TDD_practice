@@ -33,8 +33,7 @@ public class BusStopTest {
     public void checkIfAPassengerLeaveTheQueueAndEnterInTheBus(){
         busStop.addPersonToTheQueue(passenger);
         busStop.addPersonToTheQueue(passenger);
-        Person result = busStop.removePersonToTheQueue();
-        bus.pickUp(result);
+        bus.pickUp(busStop);
         assertEquals(1, busStop.getSizeOfTheQueue());
         assertEquals(1, bus.passengerCount());
     }
