@@ -18,8 +18,13 @@ public class Bus {
     }
 
     public void addPassenger(Person passenger) {
-        this.passengers.add(passenger);
+        if (passengerCount() < this.capacity) {
+            this.passengers.add(passenger);
+        }
     }
 
+    public void setCapacity(int newCapacity){
+        this.capacity = newCapacity;
+    }
 
 }
