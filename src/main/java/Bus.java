@@ -27,4 +27,7 @@ public class Bus {
         this.capacity = newCapacity;
     }
 
+    public void removePassenger(Person passenger) {
+        this.passengers.remove(0);
+    }
 }
