@@ -17,5 +17,9 @@ public class BusTest {
     public void howManyPeopleAreOnTheBus(){
                 assertEquals(0, bus.passengerCount());
     }
-
+    @Test
+    public void canAddPassengerIfThereIsSpaceInTheBus(){
+            bus.addPassenger(passenger);
+            assertEquals(1, bus.passengerCount());
+    }
 }
